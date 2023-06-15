@@ -11,7 +11,7 @@ export default async function Projects() {
         >
             <div className="font-medium text-center font-space">
                 <h3 className="text-primary"> - Featured Projects -</h3>
-                <h2 className="text-[32px]">Projects I'm Proud Of</h2>
+                <h2 className="text-[32px]">Projects I&apos;m Proud Of</h2>
             </div>
             <div className="mt-[64px] flex flex-col gap-[64px]">
                 {projects.map((project, index) => (

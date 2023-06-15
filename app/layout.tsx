@@ -13,7 +13,7 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <title>{title}</title>
-                <link rel="icon" href="./favicon.ico" />
+                <link rel="icon" href="./favicon.png" sizes="any" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link

@@ -16,7 +16,7 @@ export default async function Projects() {
             >
                 <div className="font-medium text-center font-space">
                     <h3 className="text-primary"> - My work -</h3>
-                    <h2 className="text-[32px]">Projects I've done</h2>
+                    <h2 className="text-[32px]">Projects I&apos;ve done</h2>
                 </div>
                 {projects.map((project, index) => (
                     <div
