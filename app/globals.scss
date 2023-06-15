@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    dark: #1a1a1a;
+}
+
+
+// Global components style
+
+.btn {
+    @apply px-3 py-2 uppercase transition-shadow cursor-pointer select-none duration-150 ease-out border-2 rounded-md w-fit font-space hover:shadow-none border-dark bg-primary text-light;
+    box-shadow: 3px 3px #131318;
+    &:hover {
+        box-shadow: 6px 6px #131318;
+    }
+}
+
+.bage {
+    @apply rounded-full bg-secondary text-light px-2 py-1 text-[14px] font-medium;
+}
+
+.review {
+    @apply flex flex-col gap-3 p-6 border-2 rounded-md border-dark bg-light;
+    box-shadow: 3px 3px #131318
+
+}
+
+// Projects style
+
+.previewImg {
+    @apply transition-all duration-300 ease-out cursor-pointer bg-dark;
+}
+
+// Contact style
+
+.inputField {
+    @apply w-96 p-3 transition-all duration-300 ease-out border-2 rounded-md outline-none bg-light border-dark;
+    box-shadow: 3px 3px #131318;
+    &:focus {
+        @apply shadow-none;
+    }
+}
