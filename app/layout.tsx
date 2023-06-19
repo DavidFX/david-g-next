@@ -16,6 +16,12 @@ export default function RootLayout({
                 <link rel="icon" href="./favicon.png" sizes="any" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <meta
+                    name="description"
+                    content="
+                    David G. is a student and frontend developer based in Moldova. He is passionate about web development and design.
+                "
+                />
                 <link
                     href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap"
                     rel="stylesheet"
