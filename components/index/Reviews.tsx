@@ -25,7 +25,7 @@ export default function Reviews() {
                                 )
                             )}
                         </div>
-                        <p className="text-[20px]">{review.name}</p>)
+                        <p className="text-[20px]">{review.name}</p>
                     </div>
                 ))}
             </div>
