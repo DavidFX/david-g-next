@@ -26,7 +26,7 @@ const Blog: NextPage = () => {
         <RootLayout>
             <Header active="Contact" />
             <section
-                className="container flex flex-col gap-16 my-8"
+                className="container flex flex-col gap-16 my-16"
                 aria-label="About me"
             >
                 <div className="font-medium text-center font-space">
