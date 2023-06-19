@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 type HeaderProps = {
     active?: string;
@@ -79,36 +79,49 @@ export default function Header({ active }: HeaderProps) {
                 onClick={toggleMenu}
                 className="cursor-pointer text-[32px] sm:hidden"
             />
-            <motion.div
-                animate={status ? "open" : "closed"}
-                variants={variants}
-                className="fixed top-0 left-0 z-50 w-screen h-screen text-light bg-dark"
-            >
-                <div className="">
-                    <div className="container flex h-[100px] items-center justify-end">
-                        <FiX
-                            onClick={toggleMenu}
-                            className="text-4xl cursor-pointer "
-                        />
-                    </div>
-                    <nav className="flex flex-col items-center justify-center text-[64px]">
-                        {links.map((link) => (
-                            <Link
-                                onClick={
-                                    active === link.name
-                                        ? toggleMenu
-                                        : undefined
-                                }
-                                className="container font-space"
-                                key={link.name}
-                                href={link.href}
-                            >
-                                {link.name}
-                            </Link>
-                        ))}
-                    </nav>
-                </div>
-            </motion.div>
+
+            <AnimatePresence>
+                {status && (
+                    <motion.div
+                        // animate={status ? "open" : "closed"}
+                        // variants={variants}
+                        initial={{ opacity: 0, x: "-100%" }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: "-100%" }}
+                        transition={{
+                            duration: 0.5,
+                            delay: 0.2,
+                            ease: [0, 0.71, 0.2, 1.01],
+                        }}
+                        className="fixed top-0 left-0 z-50 w-screen h-screen text-light bg-dark"
+                    >
+                        <div className="">
+                            <div className="container flex h-[100px] items-center justify-end">
+                                <FiX
+                                    onClick={toggleMenu}
+                                    className="text-4xl cursor-pointer "
+                                />
+                            </div>
+                            <nav className="flex flex-col items-center justify-center text-[64px]">
+                                {links.map((link) => (
+                                    <Link
+                                        onClick={
+                                            active === link.name
+                                                ? toggleMenu
+                                                : undefined
+                                        }
+                                        className="container font-space"
+                                        key={link.name}
+                                        href={link.href}
+                                    >
+                                        {link.name}
+                                    </Link>
+                                ))}
+                            </nav>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </header>
     );
 }
