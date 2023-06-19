@@ -6,7 +6,7 @@ import RootLayout from "../layout";
 const Blog: NextPage = () => {
     return (
         <RootLayout>
-            <Header active="contact" />
+            <Header active="Blog" />
 
             <Footer />
         </RootLayout>

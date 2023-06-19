@@ -6,7 +6,7 @@ import RootLayout from "../layout";
 const About: NextPage = () => {
     return (
         <RootLayout>
-            <Header active="contact" />
+            <Header active="About" />
 
             <section
                 className="container mt-[64px] flex flex-col gap-16 mb-16
