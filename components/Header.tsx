@@ -3,7 +3,6 @@ import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Navigation from "./menu/Navigation";
 
 type HeaderProps = {
     active?: string;
