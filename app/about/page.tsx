@@ -35,7 +35,7 @@ const About: NextPage = () => {
                     <h2 className="text-[32px]">My skills and interests</h2>
                 </div>
 
-                <div className="flex items-center justify-between gap-16">
+                <div className="flex flex-col items-center justify-between gap-16 lg:flex-row">
                     <Image
                         src="coder2.svg"
                         alt="About Me image"
@@ -43,7 +43,7 @@ const About: NextPage = () => {
                         height={500}
                     />
 
-                    <div className="flex flex-col">
+                    <div className="flex flex-col text-center lg:text-left">
                         <h3 className="text-primary font-medium font-space text-[32px]">
                             Who am I?
                         </h3>
