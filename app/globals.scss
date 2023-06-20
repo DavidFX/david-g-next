@@ -39,6 +39,6 @@
     @apply w-96 p-3 transition-all duration-300 ease-out border-2 rounded-md outline-none bg-light border-dark;
     box-shadow: 3px 3px #131318;
     &:focus {
-        @apply shadow-none;
+        box-shadow: 6px 6px #131318;
     }
 }
