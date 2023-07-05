@@ -65,7 +65,6 @@ export default async function Projects() {
                     </div>
                 ))}
             </section>
-
             <Footer />
         </RootLayout>
     );

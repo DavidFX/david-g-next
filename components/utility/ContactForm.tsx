@@ -8,7 +8,7 @@ interface ContactFormProps {
     message: string;
 }
 
-const ContanctForm = () => {
+const ContactForm = () => {
     const { register, handleSubmit, reset } = useForm<ContactFormProps>();
 
     const sendEmail = (data: any) => {
@@ -84,4 +84,4 @@ const ContanctForm = () => {
     );
 };
 
-export default ContanctForm;
+export default ContactForm;

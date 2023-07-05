@@ -1,4 +1,4 @@
-import ContanctForm from "../utility/ContanctForm";
+import ContactForm from "../utility/ContactForm";
 
 export default function ContactBlock() {
     return (
@@ -12,7 +12,7 @@ export default function ContactBlock() {
                     Feel free to start a conversation
                 </h2>
             </div>
-            <ContanctForm />
+            <ContactForm />
         </section>
     );
 }

@@ -2,7 +2,7 @@ import { type NextPage } from "next";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import RootLayout from "../layout";
-import ContanctForm from "@/components/utility/ContanctForm";
+import ContanctForm from "@/components/utility/ContactForm";
 import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
 import Image from "next/image";
 

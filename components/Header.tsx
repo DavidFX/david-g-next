@@ -43,10 +43,10 @@ export default function Header({ active }: HeaderProps) {
             name: "About",
             href: "/about",
         },
-        // {
-        //     name: "Blog",
-        //     href: "/blog",
-        // },
+        {
+            name: "Blog",
+            href: "/blog",
+        },
         {
             name: "Contact",
             href: "/contact",
